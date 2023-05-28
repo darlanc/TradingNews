@@ -1,1 +1,1 @@
-# TradingNews
+# TradingNews DEMO Project
