@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>3ab96b32-d296-4497-ab64-4f9b4555763d</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.5" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.17.2" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TradingNews.Core\TradingNews.Core.csproj" />
+    <ProjectReference Include="..\TradingNews.Microservices.DataStorageService\TradingNews.Microservices.DataStorageService.csproj" />
+    <ProjectReference Include="..\TradingNews.Microservices.NewsCollectionService\TradingNews.Microservices.NewsCollectionService.csproj" />
+  </ItemGroup>
+
+</Project>
